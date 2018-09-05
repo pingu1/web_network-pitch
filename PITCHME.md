@@ -63,9 +63,13 @@ Questions:
 
 ---
 
-### Splitting traffic
+### Splitting traffic I
 
-- Load Balancing web traffic
-- Isolation of web servers
+![load_balanced_traffic](./load_balancing.png)
 
+---
+
+### Splitting traffic II
+
+![load_balancing_web_isolated](./load_balancing_web_isolated.png)
 
