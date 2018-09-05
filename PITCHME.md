@@ -1,6 +1,7 @@
-# Lunch and Learn
+### Lunch and Learn
 
 Web Infrastructure
+
 _Make it scalable_
 
 ---
@@ -18,15 +19,22 @@ _Make it scalable_
 
 ### One machine to serve them all
 
-What happens in the VM? What are the component required to serve a regular web application?
+- What happens in the VM?
+- What are the component required to serve a regular web application?
+
+---
 
 ![local_vm](./local_vm.png)
 
 ---
 
-What are the limits of the VM? Benchmarking with
+What are the limits of the VM?
+
+Benchmarking with
 - siege
 - ab
+
+---
 
 sample siege output
 ```
