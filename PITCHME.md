@@ -158,6 +158,12 @@ Questions:
 
 ---
 
+### Recap
+
+![recap](./recap.png)
+
+---
+
 ### Other tricks
 
 - HTML caching (Varnish, hole punching)
