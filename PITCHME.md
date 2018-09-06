@@ -63,13 +63,97 @@ Questions:
 
 ---
 
-### Splitting traffic I
+### Splitting traffic
+
+- Multiple servers to improve performances
+- Use of Load Balancer to split traffic
+- Make sure dead servers are not used
+
+---
 
 ![load_balanced_traffic](./load_balancing.png)
 
 ---
 
-### Splitting traffic II
+![load_balancing_web_isolated](./load_balancing_web_cluster.png)
 
-![load_balancing_web_isolated](./load_balancing_web_isolated.png)
+---
 
+### Database Replication
+
+- multiple servers = better performances overall
+- load balancer to ensure dead servers are not used
+
+---
+
+![db_split](./db_split_1.png)
+
+---
+
+![db_split](./db_split_2.png)
+
+---
+
+### Master/Slave limitations
+
+- What happens when the master server is down?
+
+---
+
+### Master/Slave limitations
+
+- What happens when the master server is down?
+    - use of master/master setup
+    - use of +10 increments to prevent collisions
+
+---
+
+### Master/Slave limitations
+
+- What happens when sync fails
+
+---
+
+### Master/Slave limitations
+
+- What happens when sync fails
+    - importance of NOT write then read in code
+    - if needed, use a SQL transaction
+
+---
+
+### Cache management
+
+- Cache in files locally on web servers
+- Cache in DB
+- Cache in RAM using Memcache
+- Cache in RAM using Redis
+- Master/Master setup
+
+---
+
+![cache_split](./cache_split_1.png)
+
+---
+
+### Content Delivery Networks
+
+- CSS and JS content on separate servers
+- Use different URLs for different physical servers
+- Issues for cache invalidation
+    - different file names
+    - add a tag/version as part of the query string
+
+---
+
+![cdn](./how-cdn-works.png)
+
+---
+
+###
+
+Other tricks
+
+- HTML caching (Varnish, hole punching)
+- multiply urls for static content if there's a lot
+- CSS Sprites
