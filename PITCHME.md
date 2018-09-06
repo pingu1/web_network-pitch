@@ -86,9 +86,13 @@ Questions:
 
 ---
 
+### Database cluster
+
 ![db_split](./db_split_1.png)
 
 ---
+
+### Database cluster
 
 ![db_split](./db_split_2.png)
 
@@ -132,6 +136,8 @@ Questions:
 
 ---
 
+### Cache management
+
 ![cache_split](./cache_split_1.png)
 
 ---
@@ -146,13 +152,13 @@ Questions:
 
 ---
 
+### CDN
+
 ![cdn](./how-cdn-works.png)
 
 ---
 
-###
-
-Other tricks
+### Other tricks
 
 - HTML caching (Varnish, hole punching)
 - multiply urls for static content if there's a lot
